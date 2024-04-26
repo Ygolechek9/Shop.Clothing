@@ -1,0 +1,214 @@
+
+* {
+ margin: 0;
+ padding: 0;
+}
+body {
+ font-size: 24px;
+ font-family: unset;
+}
+a {
+ text-decoration: none;
+ color: white;
+}
+.main-grid {
+ display: grid;
+ grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+}
+header {
+ background-image: url("");
+ background-size: cover;
+ box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+ grid-column: 1 / -1;
+ height: 60vh;
+ color: white;
+ display: flex;
+ flex-direction: column;
+}
+nav {
+ height: 100px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 20px 50px;
+}
+.logo {
+ height: 100%;
+}
+.menu ul {
+ display: flex;
+ list-style: none;
+}
+.menu ul li {
+ padding: 1em 2em;
+}
+.menu ul li a {
+ color: white;
+ text-decoration: none;
+}
+.menu ul li a:hover {
+ color: orange;
+ transition: 0.9s;
+}
+.banner {
+ flex-grow: 1;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.banner h1 {
+ font-size: 72px;
+}
+.banner p {
+ font-size: 22px;
+ text-align: center;
+ max-width: 40%;
+ padding: 50px 0;
+}
+.clothes {
+ grid-column: 2 / -2;
+ height: 15vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+ padding-top: 150px;
+ padding-bottom: 100px;
+}
+.clothes p {
+ padding: 20px;
+ text-align: center;
+}
+.button {
+ background: #000;
+ border-radius: 7px;
+ text-align: 18px;
+ color: white;
+ padding: 10px 50px;
+}
+.button:hover {
+ background: #8c6900;
+ transition: 0.9s;
+}
+.button p{
+	margin: 5px;
+}
+.tiles{
+ grid-column: 2 / -2;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ grid-gap: 40px;
+ margin-bottom: 100px;
+}
+.item {
+ display: grid;
+ grid-template-columns: 1;
+ grid-template-rows: 1;
+ overflow: hidden;
+}
+.item img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+.item:hover .item_img {
+ transition: 0.5s;
+ margin: ;
+}
+.item p, h3 {
+	text-align: center;
+	margin: 25px;
+}
+
+footer {
+	grid-column: 1 / -1;
+	height: 30vh;
+	background: black;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+footer p {
+	padding: 30px 0;
+}
+
+.social_contacts {
+ display: flex;
+ width: 10vw;
+ justify-content: space-around;
+}
+.social_contacts a:hover {
+ color: orange;
+ transition: 0.9s;
+}
+
+.description {
+ grid-column: 2 / -2;
+ height: 30vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ padding: 70px 0;
+ padding-right: 15vw;
+}
+
+.contactsBlock {
+ grid-column: 2 / -2;
+ height: 15vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: flex-start;
+ padding-top: 150px;
+ padding-bottom: 150px;
+}
+
+#request {
+ grid-column: 2 / -2;
+ display: flex;
+ flex-direction: column;
+}
+input {
+ box-sizing: border-box;
+ width: 100%;
+ border: none;
+ border-bottom: 1px solid black;
+ font-size: 18px;
+ padding: 20px 5px;
+ margin: 30px 0;
+}
+input:focus {
+ outline: none;
+}
+#submit {
+ width: 300px;
+ border-radius: 40px;
+ background: black;
+ color: white;
+ align-self: center;
+}
+#submit:hover {
+ cursor: pointer;
+}
+
+iframe{
+	grid-column: 1 / -1;
+	width: 100%;
+	height: 50vh;
+	margin-top: 20px;
+}
+
+.shop_header{
+ background-image: url("https://static4.depositphotos.com/1005895/355/i/450/depositphotos_3554179-stock-photo-shopping-in-a-causal-clothing.jpg");
+}
+.about_header{
+ background-image: url("https://i.ytimg.com/vi/811mfRmqxQg/maxresdefault.jpg");
+}
+.Contacts_header{
+ background-image: url("");
+}
+
